@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6a683e87-be65-445c-b22a-2c1d78905b16">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="143"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<property name="com.jaspersoft.studio.unit." value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageHeight" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.pageWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.topMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.bottomMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.leftMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.rightMargin" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnWidth" value="pixel"/>
+	<property name="com.jaspersoft.studio.unit.columnSpacing" value="pixel"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="name1" class="java.lang.String"/>
+	<parameter name="compare" class="java.lang.String"/>
+	<parameter name="compare1" class="java.lang.String"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="247" y="0" width="253" height="48" uuid="37623974-63ba-468d-ac52-d0e3708b81c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體" size="32" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="MSung-Light" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[測試報表]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="328" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="271" height="46" uuid="5a590717-1f10-4c49-aac0-4711ce1b32ee">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement textAlignment="Right">
+					<font fontName="標楷體" size="32" pdfFontName="MSung-Light" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[以varchar儲存]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="271" y="46" width="531" height="46" uuid="4e3e0d89-127b-4183-a13b-5677657db510"/>
+				<box padding="2"/>
+				<textElement>
+					<font fontName="標楷體" size="32" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="230" width="531" height="46" uuid="67c276f6-3d21-4798-a1c2-6a09bdf6224c"/>
+				<box padding="2"/>
+				<textElement>
+					<font fontName="標楷體" size="32" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{compare1}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="46" width="271" height="46" uuid="f3953bc4-58af-4415-8a56-b694ab162d4b">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement textAlignment="Right">
+					<font fontName="標楷體" size="32" pdfFontName="MSung-Light" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[標楷體:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="92" width="271" height="46" uuid="fc654e01-e4f1-40aa-9604-020991f975d1">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement textAlignment="Right">
+					<font fontName="標楷體" size="32" pdfFontName="MSung-Light" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[罕用字整合:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="138" width="271" height="46" uuid="1b53d52e-79dd-463a-b2c2-f355af3a9c02">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement textAlignment="Right">
+					<font fontName="標楷體" size="32" pdfFontName="MSung-Light" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[以nvarchar儲存]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="184" width="271" height="46" uuid="1a20b204-2e75-43b8-87b5-a640750bd983">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement textAlignment="Right">
+					<font fontName="標楷體" size="32" pdfFontName="MSung-Light" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[標楷體:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="230" width="271" height="46" uuid="0f01fc4f-f52c-4dff-85f7-54946d22ef66">
+					<property name="local_mesure_unitwidth" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="local_mesure_unitheight" value="pixel"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<box padding="2"/>
+				<textElement textAlignment="Right">
+					<font fontName="標楷體" size="32" pdfFontName="MSung-Light" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[罕用字整合:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="271" y="92" width="531" height="46" uuid="4f6f7bf6-69f5-43bb-9449-a5ed3b72de41"/>
+				<box padding="2"/>
+				<textElement>
+					<font fontName="標楷體" size="32" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="271" y="184" width="531" height="46" uuid="8a7b9dc8-e8ab-4303-983a-0c9f76d7cfdf"/>
+				<box padding="2"/>
+				<textElement>
+					<font fontName="標楷體" size="32" pdfEncoding="UniCNS-UCS2-H" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{compare}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch"/>
+	</columnHeader>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

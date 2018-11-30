@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="AP4W02Q" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b5546614-3182-4923-969a-083006d577e4">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="86"/>
+	<parameter name="name" class="java.lang.String"/>
+	<parameter name="finalDate" class="java.lang.String"/>
+	<parameter name="birthday" class="java.lang.String"/>
+	<parameter name="execTime" class="java.lang.String"/>
+	<parameter name="idn" class="java.lang.String"/>
+	<parameter name="reportImgRealPath" class="java.lang.String"/>
+	<field name="idn" class="java.lang.String"/>
+	<field name="agentName" class="java.lang.String"/>
+	<field name="birthday" class="java.lang.String"/>
+	<field name="ivrvState" class="java.lang.String"/>
+	<field name="enrollDate" class="java.lang.String"/>
+	<field name="withdrawDate" class="java.lang.String"/>
+	<field name="salary" class="java.math.BigDecimal"/>
+	<field name="aYy" class="java.math.BigDecimal"/>
+	<field name="dupState" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<pageHeader>
+		<band height="102" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="57a68459-872f-4baa-93cf-6a8e97ca9052" x="0" y="0" width="555" height="37"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="標楷體" size="20" isItalic="false"/>
+				</textElement>
+				<text><![CDATA[公教人員保險被保險人年資紀錄表]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1846534b-fa5c-4301-93d3-88db357752dd" x="0" y="37" width="101" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[姓          名：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="81d6cd76-5cea-40b9-b0f9-99da1ff9717e" x="0" y="77" width="101" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[出  生  日  期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="2533eeea-c17f-4ff1-9905-ff5b1e1171d7" x="408" y="58" width="61" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[列表日期：]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="3891dcfe-68bb-43ee-8272-ddfb4d335c02" x="408" y="77" width="61" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[加保年資：]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f705db18-aa52-4627-b620-e5d1984eba8a" x="101" y="77" width="140" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{birthday}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="dcd91746-8134-4ff6-8368-aa706159e2cc" x="468" y="77" width="85" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{finalDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="54632af9-6f43-4ea6-820b-de102678512a" x="468" y="58" width="86" height="20"/>
+				<textElement textAlignment="Right">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{execTime}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="f705db18-aa52-4627-b620-e5d1984eba8a" x="101" y="38" width="140" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="1846534b-fa5c-4301-93d3-88db357752dd" x="0" y="57" width="101" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[身分證統一編號：]]></text>
+			</staticText>
+			<textField>
+				<reportElement uuid="f705db18-aa52-4627-b620-e5d1984eba8a" x="101" y="58" width="140" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{idn}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="29" splitType="Stretch">
+			<line>
+				<reportElement uuid="1c3f0923-1c6b-480b-9fe7-757c1a42aa31" x="0" y="2" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="0c592a26-2b9b-42a0-8eb8-52924eab4327" x="1" y="6" width="304" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[要保機關名稱]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a72fd3bf-9371-4d33-bb70-20707e01b5e2" x="305" y="6" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[加保日期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="c3e2d87b-26e3-4f4a-8af1-542017db6304" x="367" y="6" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[退保日期]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="d2d49577-6ffa-43e6-8165-60f67746fad0" mode="Transparent" x="429" y="6" width="124" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<text><![CDATA[備               註]]></text>
+			</staticText>
+			<line>
+				<reportElement uuid="0344c0ce-aa88-4eab-b299-dd452230716c" x="0" y="28" width="555" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement uuid="7d193526-a9a1-43cc-9867-cdd30ce54c2c" x="2" y="4" width="303" height="20"/>
+				<textElement>
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{agentName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="ecbf6595-9aa2-4824-b5cd-15615d1e402e" x="305" y="4" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{enrollDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4aee6de5-090d-4697-8143-c6ad075143e3" x="367" y="4" width="62" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{withdrawDate}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="30a7b0d4-9701-449a-9f6b-6d79ecf032c2" x="429" y="4" width="124" height="20"/>
+				<textElement textAlignment="Center">
+					<font fontName="標楷體" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dupState}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="194">
+			<line>
+				<reportElement uuid="88d6b773-adaf-4888-b0d6-89bcdd4af4a2" x="0" y="10" width="555" height="1"/>
+			</line>
+			<staticText>
+				<reportElement uuid="59f3d44b-6539-4692-ade3-8b12be6c51d8" x="1" y="12" width="553" height="83"/>
+				<textElement>
+					<font fontName="標楷體" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[說明：
+一、本表列載截至列表日止電腦登載之承保資料，被保險人如發現資料不符，請檢具相關證明文件，洽請
+    服務之要保機關轉送本部查核更正。
+二、本表係被保險人參加公保之年資紀錄，給付年資則需另行依照規定採計。
+三、備註欄有「※」記號者表示：被保險人該段期間曾參加健保以外之社會保險。
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="59f3d44b-6539-4692-ade3-8b12be6c51d8" x="0" y="95" width="252" height="26"/>
+				<textElement>
+					<font fontName="標楷體" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[臺灣銀行股份有限公司公教保險部]]></text>
+			</staticText>
+			<image isUsingCache="false" onErrorType="Blank">
+				<reportElement uuid="1ad3b9e3-5b2e-4fae-b549-b557490e6435" x="276" y="95" width="100" height="91"/>
+				<imageExpression><![CDATA[$P{reportImgRealPath}+"/signature.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</summary>
+</jasperReport>
